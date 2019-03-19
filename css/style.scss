@@ -1,0 +1,49 @@
+@mixin full-width-centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    @include full-width-centered();
+    background-color: #5995DA;
+    height: 80px;
+}
+
+header {
+    @include full-width-centered();
+    background-color: #B2D6FF;
+}
+
+main {
+    @include full-width-centered();
+    background-color: #EAEDF0;
+    height: 600px;
+}
+
+section {
+    @include full-width-centered();
+    height: 300px;
+
+    &.sign-up {
+        background-color: #D6E9FE;
+    }
+
+    &.feature-1 {
+        background-color: #F5CF8E;
+    }
+
+    &.feature-2 {
+        background-color: #F09A9D;
+    }
+
+    &.feature-3 {
+        background-color: #C8C6FA;
+    }
+}
